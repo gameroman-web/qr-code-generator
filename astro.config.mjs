@@ -5,8 +5,8 @@ import solid from "@astrojs/solid-js";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  build: { format: "preserve" },
   output: "static",
   integrations: [solid()],
   vite: { plugins: [tailwindcss()] },
+  site: "https://qr-code-generator.gameroman.workers.dev",
 });
